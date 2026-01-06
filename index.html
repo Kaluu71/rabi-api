@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For My Amazing Sister Mandy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  </head>
+  <body>
+    <div class="background-globes">
+      <div class="globe globe-1"></div>
+      <div class="globe globe-2"></div>
+      <div class="globe globe-3"></div>
+    </div>
+
+    <main class="container">
+      <!-- Initial Message Section -->
+      <section id="step-1" class="card active">
+        <div class="card-content">
+          <h1>Hello Big Sister Amanda 💖</h1>
+          <p class="message-text">
+            Since the day I was born, I knew we would bond so much. I
+            love you so much! Thank you for always listening to me and being
+            everything to me. Thank you, my love!
+          </p>
+          <button id="btn-next-1" class="btn-primary">
+            I have a question...
+          </button>
+        </div>
+      </section>
+
+      <!-- Question Section -->
+      <section id="step-2" class="card hidden">
+        <div class="card-content">
+          <h2>Do you love me? 🥺</h2>
+          <div class="button-group">
+            <button id="btn-yes" class="btn-success">Yes, I do!</button>
+            <button id="btn-no" class="btn-danger">No</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Are You Sure Section -->
+      <section id="step-3" class="card hidden">
+        <div class="card-content">
+          <h2>Are you sure?</h2>
+          <p>Really really sure?</p>
+          <button id="btn-confirm-yes" class="btn-success">
+            Yes, I love you my prettiest baby sister! 🌸
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <!-- Modal: Bank Account -->
+    <div id="modal-bank" class="modal hidden">
+      <div class="modal-content glass-card">
+        <span class="close-modal">&times;</span>
+        <div class="modal-header">
+          <h2>Awww, I knew it! 🥰</h2>
+          <p>Show your love by sending some funds! 💸</p>
+        </div>
+        <div class="account-display">
+          <span class="bank-name">Opay</span>
+          <div class="account-number-box">
+            <span id="account-number">9165586474</span>
+            <button
+              id="btn-copy"
+              class="btn-icon"
+              aria-label="Copy account number"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path
+                  d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <p id="copy-feedback" class="hidden">Copied!</p>
+        </div>
+        <p class="footer-note">Thank you my love! ✨</p>
+      </div>
+    </div>
+
+    <!-- Modal: No Choice -->
+    <div id="modal-no-choice" class="modal hidden">
+      <div class="modal-content glass-card">
+        <h2>You don't have a choice! 😈</h2>
+        <p>Muhaha! 😂</p>
+        <button id="btn-force-love" class="btn-primary">Okay, fine...</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
